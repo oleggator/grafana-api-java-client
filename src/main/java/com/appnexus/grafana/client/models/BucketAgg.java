@@ -6,6 +6,6 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(fluent = true)
 public class BucketAgg {
-    String field;
-    Integer id;
+  String field;
+  Integer id;
 }

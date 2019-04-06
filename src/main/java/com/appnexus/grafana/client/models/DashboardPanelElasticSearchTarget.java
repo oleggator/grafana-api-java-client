@@ -8,12 +8,12 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(fluent = true)
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 public class DashboardPanelElasticSearchTarget extends DashboardPanelTarget {
-    String query;
-    String alias;
-    String refId;
+  String query;
+  String alias;
+  String refId;
 
-    List<Metric> metrics;
-    List<BucketAgg> bucketAggs;
+  List<Metric> metrics;
+  List<BucketAgg> bucketAggs;
 }

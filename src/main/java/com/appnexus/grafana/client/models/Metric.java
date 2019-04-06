@@ -8,27 +8,27 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 public class Metric {
 
-    String field;
-    Integer id;
-    Type type;
+  String field;
+  Integer id;
+  Type type;
 
-    public enum Type {
-        MIN("min"),
-        MAX("max"),
-        AVG("avg"),
-        SUM("sum"),
-        COUNT("count"),
-        LAST("last"),
-        MEDIAN("median");
-        private final String value;
+  public enum Type {
+    MIN("min"),
+    MAX("max"),
+    AVG("avg"),
+    SUM("sum"),
+    COUNT("count"),
+    LAST("last"),
+    MEDIAN("median");
+    private final String value;
 
-        Type(String s) {
-            value = s;
-        }
-
-        @JsonValue
-        public String value() {
-            return value;
-        }
+    Type(String s) {
+      value = s;
     }
+
+    @JsonValue
+    public String value() {
+      return value;
+    }
+  }
 }
