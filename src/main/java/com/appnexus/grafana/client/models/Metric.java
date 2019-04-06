@@ -1,3 +1,4 @@
+/* Licensed under Apache-2.0 */
 package com.appnexus.grafana.client.models;
 
 import com.fasterxml.jackson.annotation.JsonValue;
